@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: 2s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.square div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #1A237E;
+  position: absolute;
+}
+
+.blue {
+  animation: 2s;
+  animation-name: blue;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes blue {
+  0% {
+    transform:translate(0);
+  }
+  50% {
+    transform:translate(0, 50px);
+    border-color:#3D5AFE;
+  }
+  100% {
+    transform:translate(0);
+  }
+}
+
+.pink {
+  animation: 2s;
+  animation-name: pink;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pink {
+  0% {
+    transform:translate(0);
+  }
+
+  50% {
+    transform:translate(50px, 0);
+    border-color:#E91E63;
+  }
+
+  100% {
+    transform:translate(0);
+  }
+}
+
+.yellow {
+  animation: 2s;
+  animation-name: yellow;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes yellow {
+  0% {
+    transform:translate(0);
+  }
+
+  50% {
+    transform:translate(0, -50px);
+    border-color:#FFEB3B;
+  }
+
+  100% {
+    transform:translate(0);
+  }
+}
+
+.purple {
+  animation: 2s;
+  animation-name: purple;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes purple {
+  0% {
+    transform:translate(0);
+  }
+
+  50% {
+    transform:translate(-50px, 0);
+    border-color:#8E24AA;
+  }
+
+  100% {
+    transform:translate(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(-135deg);
+  }
+
+  100% {
+    transform: rotate(-225deg);
+  }
+}
